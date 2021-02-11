@@ -1,9 +1,26 @@
 package ru.job4j.inheritance.product;
 
+import java.util.Objects;
+
 public final class Product {
     private String name;
     private int price;
     private int count;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return price == product.price &&
+                count == product.count &&
+                name.equals(product.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price, count);
+    }
 
     public Product(String name, int count) {
         this.name = name;
