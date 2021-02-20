@@ -3,17 +3,21 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Item {
+
     @Override
     public String toString() {
         return "Item{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", createdFormat='" + createdFormat + '\'' +
+                ", time='" + time + '\'' +
                 '}';
     }
 
     private int id;
     private String name;
+    public Item(String name) {
+        this.name = name;
+    }
 
     public int getId() {
         return id;
@@ -32,9 +36,9 @@ public class Item {
     }
        LocalDateTime created = LocalDateTime.now();
        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-       String createdFormat = created.format(formatter);
+       String time = created.format(formatter);
        public String getCreated() {
-           return createdFormat;
+           return time;
         }
 
 }
