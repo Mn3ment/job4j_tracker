@@ -1,6 +1,5 @@
 package ru.job4j.tracker;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class StartUI {
     public void init(Scanner scanner, Tracker tracker) {
@@ -17,15 +16,15 @@ public class StartUI {
                 tracker.add(item);
                 } else if (select == 1) {
                     Item[] all = tracker.findAll();
-                    System.out.println(Arrays.toString(all));
+                for (int i = 0; i < all.length; i++) {
+                    System.out.println(all[i]);
+                }
             } else if (select == 2) {
                 System.out.println("=== Enter Id ====");
                 int idSelect = Integer.valueOf(scanner.nextLine());
                 System.out.println("=== Rename ====");
-                Scanner input = new Scanner(System.in);
-                String rename = input.nextLine();
+                String rename = scanner.nextLine();
                 Item newName = new Item(rename);
-                tracker.replace(idSelect, newName);
                 if (tracker.replace(idSelect, newName)) {
                     System.out.println("Success");
                 } else {
@@ -53,7 +52,9 @@ public class StartUI {
                 String name = scanner.nextLine();
                 Item[] findName = tracker.findByName(name);
                 if (findName.length > 0) {
-                    System.out.println(Arrays.toString(findName));
+                    for (int i = 0; i < findName.length; i++) {
+                        System.out.println(findName[i]);
+                    }
                 }
                 else {
                     System.out.println("Заявки с таким именем не найдены");

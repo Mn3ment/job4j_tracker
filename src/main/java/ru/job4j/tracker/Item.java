@@ -4,17 +4,10 @@ import java.time.format.DateTimeFormatter;
 
 public class Item {
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", time='" + time + '\'' +
-                '}';
-    }
-
     private int id;
     private String name;
+    private LocalDateTime created = LocalDateTime.now();
+
     public Item(String name) {
         this.name = name;
     }
@@ -33,12 +26,18 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+
     }
-       LocalDateTime created = LocalDateTime.now();
-       DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-       String time = created.format(formatter);
-       public String getCreated() {
-           return time;
-        }
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String createdTime = created.format(formatter);
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", time='" + createdTime + '\'' +
+                '}';
+    }
 
 }
