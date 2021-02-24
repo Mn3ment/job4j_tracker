@@ -28,11 +28,12 @@ public class Item {
         this.name = name;
 
     }
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        String createdTime = created.format(formatter);
+
 
     @Override
     public String toString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String createdTime = created.format(formatter);
         return "Item{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
