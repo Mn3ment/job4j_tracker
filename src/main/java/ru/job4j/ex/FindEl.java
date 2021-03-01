@@ -7,6 +7,7 @@ public class FindEl {
             for (int index = 0; index < value.length; index++) {
                 if (value[index].equals(key)) {
                     rsl = index;
+                    break;
                 }
             }
             if (rsl == -1){
@@ -17,7 +18,7 @@ public class FindEl {
 
     public static void main (String[] args) {
         String[] str = {"one", "two", "three", "four"};
-        String el = "for";
+        String el = "four";
         int rsl = -1;
         try {
             rsl = indexOf(str, el);
