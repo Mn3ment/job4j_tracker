@@ -28,3 +28,12 @@ public class FindEl {
         System.out.println(rsl);
     }
 }
+
+/* nt count = 0;
+        for (String i : value) {
+            if (i.equals(key)) {
+                rsl = count;
+                break;
+            }
+            count++;
+        }*/

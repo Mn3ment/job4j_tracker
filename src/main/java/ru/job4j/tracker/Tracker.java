@@ -11,7 +11,7 @@ public class Tracker {
         items[size++] = item;
         return item;
     }
-    private int indexOf(int id) {
+    int indexOf(int id) {
         int rsl = -1;
         for (int index = 0; index < size; index++) {
             if (items[index].getId() == id) {
