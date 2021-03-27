@@ -14,6 +14,7 @@ public class UniqueText {
         for (String copy : text) {
             if (!check.contains(copy)) {
                 rsl = false;
+                break;
             }
         }
         return rsl;
