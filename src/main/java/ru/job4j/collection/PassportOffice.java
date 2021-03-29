@@ -19,10 +19,10 @@ public class PassportOffice {
 
 
     public Citizen get(String passport) {
-            if (citizens.containsKey(passport)) {
-               Citizen value = citizens.get(passport);
-                return value;
-            }
-            return null;
+        return citizens.get(passport);
+    }
+
+    public Map<String, Citizen> getCitizens() {
+        return citizens;
     }
 }
