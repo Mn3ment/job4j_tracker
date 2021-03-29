@@ -22,7 +22,4 @@ public class PassportOffice {
         return citizens.get(passport);
     }
 
-    public Map<String, Citizen> getCitizens() {
-        return citizens;
-    }
 }
