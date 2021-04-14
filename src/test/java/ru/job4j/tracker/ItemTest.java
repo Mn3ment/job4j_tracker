@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 
 public class ItemTest {
     @Test
-    public void WhenAscending() {
+    public void whenAscending() {
         List<Item> items = new ArrayList<>(List.of(
                 new Item(3, "Ivan"),
                 new Item(1, "Artur"),
@@ -27,7 +27,7 @@ public class ItemTest {
     }
 
     @Test
-    public void WhenDescending() {
+    public void whenDescending() {
         List<Item> items = Arrays.asList(
                 new Item(3, "Ivan"),
                 new Item(1, "Artur"),

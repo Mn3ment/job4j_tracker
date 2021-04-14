@@ -6,7 +6,7 @@ public class Fact {
     }
 
     public static int calc(int n) {
-        if (n < 0 ) {
+        if (n < 0) {
             throw new IllegalArgumentException("number should be more then 0.");
         }
         int rsl = 1;
@@ -16,8 +16,6 @@ public class Fact {
         return rsl;
     }
 }
-/* java.lang.IllegalArgumentException - метод вызывается с некорректными параметрами.
-
-java.lang.IllegalStateException - метод вызывается с объекта в не корректном состоянии.
-
-java.lang.NullPointerException - методы вызывается у переменной, которая инициализирована null ссылкой.    */
+/* java.lang.IllegalArgumentException - вызывается с некорректными параметрами.
+java.lang.IllegalStateException - вызывается с объекта в не корректном состоянии.
+java.lang.NullPointerException - вызывается у переменной, которая инициализирована null ссылкой.*/

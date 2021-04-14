@@ -12,12 +12,12 @@ public class FactTest {
     @Test(expected = IllegalArgumentException.class)
     public void calc() {
         int rsl = Fact.calc(-5);
-        assertThat(rsl,is("number should be more then 0."));
+        assertThat(rsl, is("number should be more then 0."));
     }
 
     @Test
-    public void When5To120() {
+    public void when5To120() {
         int rsl = Fact.calc(5);
-        assertThat(rsl,is(120));
+        assertThat(rsl, is(120));
     }
 }

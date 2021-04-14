@@ -29,6 +29,7 @@ public class JobSorterTest {
         assertThat(job, is(expected));
 
     }
+
     @Test
     public void whenComb() {
         List<Job> job = Arrays.asList(
@@ -53,8 +54,9 @@ public class JobSorterTest {
     }
 
     @Test
-    public void whenDescByNameAndPrority() {
-        Comparator<Job> cmpNamePriority = new JobDescByName().thenComparing(new JobDescByPriority());
+    public void whenDescByNameAndPriority() {
+        Comparator<Job> cmpNamePriority = new JobDescByName()
+                .thenComparing(new JobDescByPriority());
         int rsl = cmpNamePriority.compare(
                 new Job("X task", 3),
                 new Job("Reboot server", 5)

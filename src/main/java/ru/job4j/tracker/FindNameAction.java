@@ -22,8 +22,7 @@ public class FindNameAction implements UserAction {
             for (Item item : findName) {
                 out.println(item);
             }
-        }
-        else {
+        } else {
             out.println("Заявки с таким именем не найдены");
         }
         return true;

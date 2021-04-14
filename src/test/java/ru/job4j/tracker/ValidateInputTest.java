@@ -17,8 +17,9 @@ public class ValidateInputTest {
         int selected = input.askInt("Enter menu:");
         assertThat(selected, is(1));
     }
+
     @Test
-    public void whenvalidInput() {
+    public void whenValidInput() {
         Output out = new StubOutput();
         Input in = new StubInput(
                 new String[] {"4", "4", "4"}
@@ -29,7 +30,7 @@ public class ValidateInputTest {
     }
 
     @Test
-    public void whenvalidInput1() {
+    public void whenValidInput1() {
         Output out = new StubOutput();
         Input in = new StubInput(
                 new String[] {"four", "five", "5"}
@@ -40,7 +41,7 @@ public class ValidateInputTest {
     }
 
     @Test
-    public void whenvalidInput2() {
+    public void whenValidInput2() {
         Output out = new StubOutput();
         Input in = new StubInput(
                 new String[] {"four", "five", "-1"}

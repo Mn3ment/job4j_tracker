@@ -10,13 +10,13 @@ public class FindEl {
                     break;
                 }
             }
-            if (rsl == -1){
+            if (rsl == -1) {
             throw new ElementNotFoundException("Element not found");
         }
             return rsl;
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         String[] str = {"one", "two", "three", "four"};
         String el = "four";
         int rsl = -1;

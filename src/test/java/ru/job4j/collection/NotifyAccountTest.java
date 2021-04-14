@@ -13,14 +13,14 @@ public class NotifyAccountTest {
 
     @Test
     public void sent() {
-        List<Account> accounts = Arrays.asList(
-                new Account("123", "Petr Arsentev", "eDer3432f"),
-                new Account("142", "Petr Arsentev", "000001")
+        List<Accounts> accounts = Arrays.asList(
+                new Accounts("123", "Petr Arsentev", "eDer3432f"),
+                new Accounts("142", "Petr Arsentev", "000001")
         );
-        HashSet<Account> expect = new HashSet<>(
+        HashSet<Accounts> expect = new HashSet<>(
                 Arrays.asList(
-                        new Account("123", "Petr Arsentev", "eDer3432f"),
-                        new Account("142", "Petr Arsentev", "000001")
+                        new Accounts("123", "Petr Arsentev", "eDer3432f"),
+                        new Accounts("142", "Petr Arsentev", "000001")
                 )
         );
         assertThat(NotifyAccount.sent(accounts), is(expect));
@@ -28,16 +28,16 @@ public class NotifyAccountTest {
 
     @Test
     public void sen1() {
-        List<Account> accounts = Arrays.asList(
-                new Account("123", "Petr Arsentev", "eDer3432f"),
-                new Account("142", "Petr Arsentev", "000001"),
-                new Account("123", "Petr Arsentev", "eDer3432f"),
-                new Account("142", "Petr Arsentev", "000001")
+        List<Accounts> accounts = Arrays.asList(
+                new Accounts("123", "Petr Arsentev", "eDer3432f"),
+                new Accounts("142", "Petr Arsentev", "000001"),
+                new Accounts("123", "Petr Arsentev", "eDer3432f"),
+                new Accounts("142", "Petr Arsentev", "000001")
         );
-        HashSet<Account> expect = new HashSet<>(
+        HashSet<Accounts> expect = new HashSet<>(
                 Arrays.asList(
-                        new Account("123", "Petr Arsentev", "eDer3432f"),
-                        new Account("142", "Petr Arsentev", "000001")
+                        new Accounts("123", "Petr Arsentev", "eDer3432f"),
+                        new Accounts("142", "Petr Arsentev", "000001")
                 )
         );
         assertThat(NotifyAccount.sent(accounts), is(expect));

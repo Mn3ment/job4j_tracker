@@ -4,9 +4,11 @@ package ru.job4j.tracker;
 import java.util.List;
 
 public class SingleTracker {
-    private Tracker tracker = new Tracker();
     private static SingleTracker instance = null;
-    private SingleTracker() {}
+
+    private Tracker tracker = new Tracker();
+
+    private SingleTracker() { }
 
     public static SingleTracker getInstance() {
         if (instance == null) {
@@ -22,17 +24,19 @@ public class SingleTracker {
     public Item findById(int id) {
         return tracker.findById(id);
     }
+
     private int indexOf(int id) {
         return tracker.indexOf(id);
     }
 
     public List<Item> findAll() {
         return tracker.findAll();
-
     }
+
     public List<Item> findByName(String key) {
         return tracker.findByName(key);
     }
+
     public boolean replace(int id, Item item) {
         return tracker.replace(id, item);
     }
