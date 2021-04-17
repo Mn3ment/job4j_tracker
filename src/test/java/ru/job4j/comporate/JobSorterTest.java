@@ -1,6 +1,7 @@
 package ru.job4j.comporate;
 
 import static org.hamcrest.Matchers.lessThan;
+import static org.hamcrest.Matchers.greaterThan;
 import org.junit.Test;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -59,7 +60,18 @@ public class JobSorterTest {
                 .thenComparing(new JobDescByPriority());
         int rsl = cmpNamePriority.compare(
                 new Job("X task", 3),
-                new Job("Reboot server", 5)
+                new Job("X task", 5)
+        );
+        assertThat(rsl, greaterThan(0));
+    }
+
+    @Test
+    public void whenAscByNameAndPriority() {
+        Comparator<Job> cmpNamePriority = new SortByNameJob()
+                .thenComparing(new JobByPriority());
+        int rsl = cmpNamePriority.compare(
+                new Job("X task", 3),
+                new Job("X task", 5)
         );
         assertThat(rsl, lessThan(0));
     }
