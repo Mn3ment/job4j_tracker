@@ -40,6 +40,7 @@ public class User {
      * Метод получает значение поля имя пользователя
      * @return значение поля username
      */
+
     public String getUsername() {
         return username;
     }
@@ -47,6 +48,7 @@ public class User {
      * Метод присваивает значение поля имя пользователя
      * @param username значение для поля имя пользователя
      */
+
     public void setUsername(String username) {
         this.username = username;
     }

@@ -6,6 +6,7 @@ import java.util.Objects;
  * @author Mikhail Isakhanyan
  * @version 1.0
  */
+
 public class Account {
     private String requisite;
     private double balance;
@@ -15,6 +16,7 @@ public class Account {
      * @param requisite - реквизиты
      * @param balance - баланс
      */
+
     public Account(String requisite, double balance) {
         this.requisite = requisite;
         this.balance = balance;
@@ -23,6 +25,7 @@ public class Account {
      * Метод получает значение поля requisite
      * @return значение поля requisite
      */
+
     public String getRequisite() {
         return requisite;
     }
@@ -30,6 +33,7 @@ public class Account {
      * Метод присваивает значение поля requisite
      * @param requisite принимает значение для requisite
      */
+
     public void setRequisite(String requisite) {
         this.requisite = requisite;
     }
@@ -37,6 +41,7 @@ public class Account {
      * Метод получает значение поля balance
      * @return значение поля balance
      */
+
     public double getBalance() {
         return balance;
     }
@@ -44,6 +49,7 @@ public class Account {
      * Метод присваивает значение поля balance
      * @param balance принимает значение для balance
      */
+
     public void setBalance(double balance) {
         this.balance = balance;
     }
