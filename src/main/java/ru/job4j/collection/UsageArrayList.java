@@ -11,5 +11,11 @@ public class UsageArrayList {
         for (Object value : names) {
             System.out.println(value);
         }
+        ArrayList list = new ArrayList();
+        list.add("blabla");
+        list.add(1234);
+        for (Object bls: list) {
+            System.out.println(bls);
+        }
     }
 }
