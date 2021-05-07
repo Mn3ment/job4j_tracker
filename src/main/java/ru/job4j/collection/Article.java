@@ -5,9 +5,11 @@ import java.util.HashSet;
 
 public class Article {
     public static boolean generateBy(String origin, String line) {
-        HashSet<String> first = new HashSet<>(Arrays.asList(origin.split("[., :;!?]")));
-        HashSet<String> second = new HashSet<>(Arrays.asList(line.split("[., :;!?]")));
-        for (String value : second) {
+        HashSet<String> first = new HashSet<>(Arrays
+                .asList(origin
+                        .replaceAll("\\p{P}", "")
+                                .split(" ")));
+        for (String value : line.replaceAll("\\p{P}", "").split(" ")) {
                 if (!first.contains(value)) {
                     return false;
                 }

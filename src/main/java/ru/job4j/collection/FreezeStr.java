@@ -25,6 +25,6 @@ public class FreezeStr {
                 }
             }
         }
-        return true;
+        return map.isEmpty();
     }
 }
