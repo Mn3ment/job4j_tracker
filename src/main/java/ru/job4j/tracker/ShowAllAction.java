@@ -17,8 +17,12 @@ public class ShowAllAction implements UserAction {
     @Override
     public boolean execute(Input input, Tracker tracker) {
         List<Item> all = tracker.findAll();
-        for (Item item : all) {
-            out.println(item);
+        if (all.size() > 0) {
+            for (Item item : all) {
+                out.println(item);
+            }
+        } else {
+            out.println("Хранилище еще не содержит заявок");
         }
         return true;
     }

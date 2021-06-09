@@ -18,6 +18,8 @@ public class StartUI {
             if (select < 0 || select >= actions.size()) {
                 out.println("Wrong input, you can select: 0 .. " + (actions.size() - 1));
                 continue;
+            } else {
+                out.println("Пользователь выбрал: " + select);
             }
             UserAction action = actions.get(select);
             run = action.execute(input, tracker);
