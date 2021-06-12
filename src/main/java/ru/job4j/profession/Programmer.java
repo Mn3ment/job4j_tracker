@@ -7,5 +7,7 @@ public class Programmer extends Engineer {
         super(name, surname, age, education, development);
     }
 
-    public void coding() {}
+    public void coding() {
+
+    }
 }

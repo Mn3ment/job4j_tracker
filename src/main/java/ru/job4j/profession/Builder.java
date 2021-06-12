@@ -8,5 +8,7 @@ public class Builder extends Engineer {
         super(name, surname, age, education, development);
     }
 
-    public void building() {}
+    public void building() {
+
+    }
 }

@@ -16,6 +16,4 @@ public class Profession {
     public int getAge()  {
         return age;
     }
-
-
 }

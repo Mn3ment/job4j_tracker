@@ -9,5 +9,7 @@ public class Engineer extends Profession {
         this.education = education;
     }
 
-    public void invent() {}
+    public void invent() {
+
+    }
 }

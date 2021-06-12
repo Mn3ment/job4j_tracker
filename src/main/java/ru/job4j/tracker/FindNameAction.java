@@ -23,7 +23,7 @@ public class FindNameAction implements UserAction {
                 out.println(item);
             }
         } else {
-            out.println("Заявки с таким именем не найдены");
+            out.println("Заявки с именем: " + name + " не найдены.");
         }
         return true;
     }
