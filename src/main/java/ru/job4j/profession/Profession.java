@@ -3,8 +3,7 @@ package ru.job4j.profession;
 public class Profession {
     private String name;
     private String surname;
-    private String birthday;
-    private String education;
+    private int age;
 
     public String getName()  {
         return name;
@@ -14,12 +13,9 @@ public class Profession {
         return surname;
     }
 
-    public String getBirthday()  {
-        return birthday;
+    public int getAge()  {
+        return age;
     }
 
-    public String getEducation()  {
-        return education;
-    }
 
 }
