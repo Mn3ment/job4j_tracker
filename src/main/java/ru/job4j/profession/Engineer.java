@@ -5,6 +5,7 @@ public class Engineer extends Profession {
     private String development;
 
     public Engineer(String name, String surname, int age, String education, String development) {
+        super(name, surname, age);
         this.development = development;
         this.education = education;
     }

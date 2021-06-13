@@ -4,11 +4,12 @@ public class Doctor extends Profession {
     private String education;
 
     public Doctor(String name, String surname, int age, String education) {
+        super(name, surname, age);
         this.education = education;
     }
 
     public Doctor(String name, String surname, int age) {
-        super();
+        super(name, surname, age);
     }
 
     public String getEducation()  {
