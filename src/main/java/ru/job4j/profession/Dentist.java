@@ -10,4 +10,8 @@ public class Dentist extends Doctor {
 
     public void drillTeeth() {
     }
+
+    public String getDrill() {
+        return drill;
+    }
 }

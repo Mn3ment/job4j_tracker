@@ -11,6 +11,13 @@ public class Engineer extends Profession {
     }
 
     public void invent() {
+    }
 
+    public String getEducation() {
+        return education;
+    }
+
+    public String getDevelopment() {
+        return development;
     }
 }

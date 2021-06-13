@@ -10,6 +10,9 @@ public class Programmer extends Engineer {
     }
 
     public void coding() {
+    }
 
+    public String getProgrammingLanguage() {
+        return programmingLanguage;
     }
 }

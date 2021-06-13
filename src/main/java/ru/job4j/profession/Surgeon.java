@@ -11,4 +11,7 @@ public class Surgeon extends Doctor {
     public void surgery() {
     }
 
+    public String getScalpel() {
+        return scalpel;
+    }
 }

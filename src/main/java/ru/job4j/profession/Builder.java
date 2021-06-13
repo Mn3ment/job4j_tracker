@@ -12,6 +12,13 @@ public class Builder extends Engineer {
     }
 
     public void building() {
+    }
 
+    public String getDraft() {
+        return draft;
+    }
+
+    public String getTest() {
+        return test;
     }
 }
