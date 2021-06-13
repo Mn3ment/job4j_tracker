@@ -27,6 +27,8 @@ public class StartUITest {
                         + System.lineSeparator()
                         + "0. Exit"
                         + System.lineSeparator()
+                        + "Пользователь выбрал: 0"
+                        + System.lineSeparator()
         ));
     }
 
@@ -49,6 +51,7 @@ public class StartUITest {
                                 + "Wrong input, you can select: 0 .. 0%n"
                                 + "Menu.%n"
                                 + "0. Exit%n"
+                                + "Пользователь выбрал: 0%n"
                 )
         ));
     }
@@ -75,11 +78,17 @@ public class StartUITest {
                         + System.lineSeparator()
                         + "1. Exit"
                         + System.lineSeparator()
+                        + "Пользователь выбрал: 0"
+                        + System.lineSeparator()
+                        + "Хранилище еще не содержит заявок"
+                        + System.lineSeparator()
                         + "Menu."
                         + System.lineSeparator()
                         + "0. Show all items"
                         + System.lineSeparator()
                         + "1. Exit"
+                        + System.lineSeparator()
+                        + "Пользователь выбрал: 1"
                         + System.lineSeparator()
         ));
     }
@@ -108,12 +117,16 @@ public class StartUITest {
                         + System.lineSeparator()
                         + "1. Exit"
                         + System.lineSeparator()
+                        + "Пользователь выбрал: 0"
+                        + System.lineSeparator()
                         + item
                         + System.lineSeparator()
                         + "Menu." + System.lineSeparator()
                         + "0. Find item by name"
                         + System.lineSeparator()
                         + "1. Exit"
+                        + System.lineSeparator()
+                        + "Пользователь выбрал: 1"
                         + System.lineSeparator()
         ));
     }
@@ -140,6 +153,8 @@ public class StartUITest {
                         + System.lineSeparator()
                         + "1. Exit"
                         + System.lineSeparator()
+                        + "Пользователь выбрал: 0"
+                        + System.lineSeparator()
                         + item
                         + System.lineSeparator()
                         + "Menu."
@@ -147,6 +162,8 @@ public class StartUITest {
                         + "0. Find item by id"
                         + System.lineSeparator()
                         + "1. Exit"
+                        + System.lineSeparator()
+                        + "Пользователь выбрал: 1"
                         + System.lineSeparator()
         ));
     }
