@@ -14,7 +14,6 @@ public class LambdaUsage {
             return right.getName().compareTo(left.getName());
         };
         Arrays.sort(atts, desComp);
-        System.out.println(atts);
     }
 }
 
