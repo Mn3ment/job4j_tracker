@@ -12,8 +12,8 @@ public class Even {
             numbers.add(i);
         }
         List<Integer> even = numbers.stream().filter(
-                number -> number % 2 == 0
-        ).collect(Collectors.toList());
-        even.forEach(System.out::println);
+                number -> number % 2 == 0)
+                .collect(Collectors.toList());
+                even.forEach(System.out::println);
     }
 }
