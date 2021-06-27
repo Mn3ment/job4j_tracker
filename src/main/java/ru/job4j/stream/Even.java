@@ -11,8 +11,10 @@ public class Even {
         for (int i = 1; i < 21; i++) {
             numbers.add(i);
         }
-        List<Integer> even = numbers.stream().filter(
-                number -> number > 0)
+        numbers.add(-50);
+        numbers.add(-12345);
+        numbers.add(100500);
+        List<Integer> even = numbers.stream().filter(number -> number > 0)
                 .collect(Collectors.toList());
                 even.forEach(System.out::println);
     }
