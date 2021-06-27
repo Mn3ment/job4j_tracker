@@ -13,8 +13,7 @@ public class School {
 //                rsl.add(student);
 //            }
 //        }
-        List<Student> rsl = students.stream().filter(predict)
+        return students.stream().filter(predict)
                 .collect(Collectors.toList());
-        return rsl;
     }
 }
