@@ -7,6 +7,6 @@ import java.util.stream.Stream;
 public class ArrayToList {
 
     public static List<Integer> convert(Integer[][] array) {
-        return Stream.of(array).flatMap(x -> Stream.of(x)).collect(Collectors.toList());
+        return Stream.of(array).flatMap(Stream::of).collect(Collectors.toList());
     }
 }
