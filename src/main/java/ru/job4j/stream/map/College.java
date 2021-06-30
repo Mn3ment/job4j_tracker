@@ -20,11 +20,6 @@ public class College {
             }
         }
         return rsl;
-//        return students.keySet()
-//                .stream()
-//                .filter(s -> s.getAccount().equals(account))
-//                .findFirst()
-//                .orElse(null);
     }
 
     public Optional<Subject> findBySubjectName(String account, String name) {
@@ -38,11 +33,7 @@ public class College {
             }
         }
         return Optional.empty();
-//            return students.get(a)
-//                    .stream()
-//                    .filter(s -> s.getName().equals(name))
-//                    .findFirst()
-//                    .orElse(null);
+
     }
 
     public static void main(String[] args) {
